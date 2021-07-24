@@ -1,0 +1,24 @@
+{
+    "rules": [
+        {
+            "match": "index.html",
+            "folder": "src"
+        },
+        {
+            "match": "*.{css, scss, saas}",
+            "folder": "src/styles"
+        },
+        {
+            "match": "*.js",
+            "folder": "src/js"
+        },
+        {
+            "match": "*.{jpg,png,gif,svg}",
+            "folder": "src/assets/images"
+        },
+        {
+            "match": "*{eot,ttf,woff2,woff}",
+            "folder": "src/assets/fonts"
+        }
+    ]
+}

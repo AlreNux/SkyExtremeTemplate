@@ -1,0 +1,45 @@
+{
+    "name": "hungry-people",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "parcel serve src/index.html --open",
+        "build": "parcel build src/index.html",
+        "prettier": "prettier --write src/**",
+        "lintHTML": "linthtml src/index.html",
+        "lintCSS": "stylelint src/**/*.css",
+        "lint": "yarn lintHTML && yarn lintCSS",
+        "commit": "git-cz"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn prettier",
+            "pre-push": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.(html|css|js)": [
+            "yarn prettier"
+        ],
+        "*.html": [
+            "yarn lintHTML"
+        ],
+        "*.css": [
+            "yarn lintCSS"
+        ]
+    },
+    "devDependencies": {
+        "@linthtml/linthtml": "^0.7.0",
+        "@parcel/runtime-browser-hmr": "^2.0.0-alpha.3",
+        "git-cz": "^4.7.6",
+        "husky": "^6.0.0",
+        "parcel": "^2.0.0-beta.2",
+        "parcel-bundler": "^1.12.5",
+        "stylelint": "^13.12.0",
+        "stylelint-config-standard": "^21.0.0"
+    },
+    "dependencies": {
+        "compass": "^0.1.1"
+    }
+}

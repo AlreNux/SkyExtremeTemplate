@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/index.js"],"names":["module","hot","accept"],"mappings":"AAAA,IAAIA,MAAM,CAACC,GAAX,EAAgB;AACZD,EAAAA,MAAM,CAACC,GAAP,CAAWC,MAAX;AACH","file":"js.00a46daa.js","sourceRoot":"..\\src","sourcesContent":["if (module.hot) {\r\n    module.hot.accept();\r\n}\r\n"]}

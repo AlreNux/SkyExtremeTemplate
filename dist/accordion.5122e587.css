@@ -1,0 +1,85 @@
+
+.hide {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.accordion {
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.accordion__item {
+  position: relative;
+  width: 100%;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.accordion__item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.accordion__label {
+  padding: 20px 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.accordion__label:hover {
+  cursor: pointer;
+}
+
+.accordion__label::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  top: 22px;
+  left: 12px;
+  display: inline-block;
+  border-left: 5px solid #999;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  transition: transform 0.5s;
+}
+
+input[type=checkbox]:checked ~ .accordion__label::before {
+  transform: rotate(90deg);
+}
+
+.accordion__child {
+  margin: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+  height: 0;
+  transform: scale(1, 0);
+  transform-origin: center top;
+}
+
+input[type=checkbox]:checked ~ .accordion__child {
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 30px 0;
+  height: auto;
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+
+/*# sourceMappingURL=/accordion.5122e587.css.map */

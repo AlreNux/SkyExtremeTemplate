@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Banny Round';
+    src: url('/Banny-BoldRound.212e95ae.woff2') format('woff2'),
+        url('/Banny-BoldRound.0a4c36a0.woff') format('woff'),
+        url('/Banny-BoldRound.e10eb85e.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Banny Round';
+    src: url('/Banny-Round.59d08812.woff2') format('woff2'),
+        url('/Banny-Round.649727b3.woff') format('woff'),
+        url('/Banny-Round.39a10f53.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Banny Light Round';
+    src: url('/Banny-LightRound.88e7a3be.woff2') format('woff2'),
+        url('/Banny-LightRound.53a6587d.woff') format('woff'),
+        url('/Banny-LightRound.5caaa348.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*# sourceMappingURL=/stylesheet.04ea350b.css.map */

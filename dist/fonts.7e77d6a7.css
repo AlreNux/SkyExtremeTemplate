@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Banny';
+  src:
+    url('/Banny-BoldRound.5e1e69d5.woff2') format('woff2'),
+    url('/Banny-BoldRound.5c2e6373.woff') format('woff'),
+    url('/Banny-BoldRound.4c855c70.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Banny Bold';
+  src:
+    url('/Banny-Round.16afaeb8.woff2') format('woff2'),
+    url('/Banny-Round.6732464d.woff') format('woff'),
+    url('/Banny-Round.45844120.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open-Sans Bold';
+  src:
+    url('/OpenSans-Bold.90afc4ba.woff2') format('woff2'),
+    url('/OpenSans-Bold.a29bf7ca.woff') format('woff'),
+    url('/OpenSans-Bold.c5de4b47.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src:
+    url('/OpenSans-Regular.0943037e.woff2') format('woff2'),
+    url('/OpenSans-Regular.bc7b8e60.woff') format('woff'),
+    url('/OpenSans-Regular.4e41b7c3.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/*# sourceMappingURL=/fonts.7e77d6a7.css.map */
