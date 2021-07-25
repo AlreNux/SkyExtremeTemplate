@@ -1,10 +1,13 @@
-
 :root {
-  --main-color: #fff;
-  --secondary-color: #000;
-  --bg-color: #e8c300;
-  --main-border: 1px solid rgba(255, 255, 255, 0.2);
-  --filter-shadow: drop-shadow(0 0 50px rgba(0, 0, 0, 0.5));
+  --text-main-color: #000;
+  --text-secondary-color: #2c4cbc;
+  --subtext-color: #949494;
+  --text-placeholder-color: #a7a7a7;
+  --background-color: #f3f4f8;
+  --text-button-color: #fff;
+  --background-button-color: #2c4cbc;
+  --title-font-size: 28px;
+  --box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.09);
 }
 
 

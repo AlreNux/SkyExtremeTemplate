@@ -1,0 +1,60 @@
+.about-us__container {
+  position: relative;
+  padding-left: 121px;
+  background: url('../../assets/billboard-background.jpg') no-repeat;
+}
+
+.about-us__title {
+  padding-top: 91px;
+  max-width: 549px;
+}
+
+.about-us__title > span {
+  color: var(--text-secondary-color);
+}
+
+.about-us__subtitle {
+  padding: 30px 0 134px 0;
+  max-width: 384px;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid var(--text-secondary-color);
+  border-right: 3px solid var(--text-secondary-color);
+  border-radius: 1px;
+}
+
+.about-us__slider__button {
+  background: #ffffff;
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.about-us__slider__button--right {
+  margin-right: 28px;
+  padding-right: 5px;
+  top: 46%;
+  right: 0;
+}
+
+.about-us__slider__button--left {
+  margin-left: 29px;
+  padding-left: 5px;
+  bottom: 46%;
+  left: 0;
+}
+
+.about-us__slider__arrow--right {
+  transform: rotate(45deg);
+}
+
+.about-us__slider__arrow--left {
+  transform: rotate(-135deg);
+}

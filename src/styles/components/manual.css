@@ -1,0 +1,17 @@
+.manual__container {
+  padding: 91px 0 74px 121px;
+  background-image: url('../../assets/manual/window-background--picture.jpg') no-repeat;
+}
+
+.manual__subtitle {
+  padding-top: 11px;
+  max-width: 577px;
+}
+
+.manual__subtitle > a {
+  color: var(--text-secondary-color);
+}
+
+.manual__subtitle:first-child {
+  padding-top: 24px;
+}

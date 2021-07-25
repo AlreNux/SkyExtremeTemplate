@@ -1,15 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="stylesheet" href="styles/fonts.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/root.css" />
-    <!-- <link rel="shortcut icon" href="assets/images/favicon-icon.svg" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="assets/favicon-icon.svg" type="image/x-icon" />
 
     <title>Sky Extreme</title>
   </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a class="navigation__link" href="/">
+          <img class="header__logotype logotype" src="./assets/logotype-icon.svg" alt="logotype" />
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__items">
+            <li class="navigation__item">
+              <a class="navigation__link" href="/">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#Услуги">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#Доставка">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#Оплата">Оплата</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#Сертификаты">Сертификаты</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#Активация">Активация</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__map">
+          <img src="./assets/header/map-icon.svg" alt="Select address" class="header__map__icon" />
+          <span>Выборгское шоссе, д.212, п.24а</span>
+        </div>
+        <div class="header__social">
+          <a href="/" class="header__social__link"><img src="./assets/header/vk-icon.svg" alt="vk" /></a>
+          <a href="/" class="header__social__link"><img src="./assets/header/instagram-icon.svg" alt="instagram" /></a>
+          <a href="/" class="header__social__link"><img src="./assets/header/youtube-icon.svg" alt="youtube" /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="search">
+          <div class="search__container">
+            <button class="search__catalog">
+              <img src="./assets/searchSection/helicopter-icon.svg" alt="Helicopter" class="search__catalog__icon" />
+              <span>Каталог</span>
+            </button>
+            <select name="city" id="city" class="search__select">
+              <option value="Москва и область">Москва и область</option>
+            </select>
+            <div class="search__info">
+              <p class="search__info__subtitle">пн-пт: с 9:00 до 19:00</p>
+              <p class="search__info__title">+7 (800) 700-92-32</p>
+            </div>
+            <label for="search" class="search__label">
+              <input type="text" name="search" id="search" placeholder="Поиск..." class="search__input" />
+              <button type="button" class="search__label__button">
+                <img
+                  src="./assets/searchSection/magnifier-icon.svg"
+                  alt="magnifier"
+                  class="search__label__button__icon"
+                />
+              </button>
+            </label>
+            <button type="button" class="search__user">
+              <img src="./assets/searchSection/user-icon.svg" alt="user body" />
+            </button>
+            <button type="button" class="search__shopping-basket">
+              <img src="./assets/searchSection/shoppingCart-icon.svg" alt="shopping cart" />
+              <div class="search__shopping-basket__text">
+                <p class="search__shopping-basket__title">Ваша корзина</p>
+                <p class="search__shopping-basket__subtitle">2 шт</p>
+              </div>
+            </button>
+          </div>
+        </section>
+        <section class="about-us">
+          <div class="about-us__container">
+            <button type="button" class="about-us__slider__button about-us__slider__button--right">
+              <div class="arrow about-us__slider__arrow--right"></div>
+            </button>
+            <button type="button" class="about-us__slider__button about-us__slider__button--left">
+              <div class="arrow about-us__slider__arrow--left"></div>
+            </button>
+            <h1 class="about-us__title title">
+              Лучшие впечатления и эмоции дарит вам компания скайэкстрим, мы базируемся в <span>Москве и МО</span>
+            </h1>
+            <h2 class="about-us__subtitle subtitle">
+              Лучшие впечатления и эмоции дарит вам компания скайэкстрим, мы базируемся в Москве и МО. Доверьтесь проффи
+              - мы не подведем.
+            </h2>
+          </div>
+        </section>
+        <section class="delivery-block">
+          <div class="delivery-block__container">
+            <div class="delivery-block__inner">
+              <div class="delivery-block__card">
+                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" />
+                <span class="delivery-block__card__text">
+                  <span>Электронный</span>
+                  <p>сертификат на e-mail</p>
+                </span>
+              </div>
+              <div class="delivery-block__card">
+                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" />
+                <span class="delivery-block__card__text">
+                  <span>Срочная доставка в</span>
+                  <p>день заказа, за 1-4 часа</p></span
+                >
+              </div>
+              <div class="delivery-block__card">
+                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" />
+                <span class="delivery-block__card__text">
+                  <span>Бесплатная доставка</span>
+                  <p>на следующий день</p>
+                </span>
+              </div>
+              <div class="delivery-block__card">
+                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" />
+                <span class="delivery-block__card__text">
+                  <span>Выгодные услуги</span>
+                  <p>и низкие цены</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services">
+          <div class="products__container--services">
+            <div class="products__page-title">
+              <h2 class="products__title title">Доступные услуги для всех:</h2>
+              <a href="/" class="products__title-link">
+                <span>Все услуги</span>
+                <img src="./assets/products/arrow-icon.svg" alt="arrow link" class="products__title-link__icon" />
+              </a>
+            </div>
+            <div class="products__cards">
+              <div class="products__card">
+                <img src="./assets/products/helicopter-picture.jpg" alt="helicopter" />
+                <div class="products__card__text">
+                  <h4 class="products__card__title">Полёт на вертолёте</h4>
+                  <p class="products__card__subtitle subtitle">
+                    В сертификат входит: полёт на верто- лёте 12 минут, прыжок с парашютом, полёт в аэротрубе 25 минут.
+                  </p>
+                  <div class="products__card__readmore">
+                    <button class="products__card__readmore__button main-button">Подробнее</button>
+                    <p class="products__card__readmore__text">от <span>25000₽</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <img src="./assets/products/airship-picture.jpg" alt="helicopter" />
+                <div class="products__card__text">
+                  <h4 class="products__card__title">Полёт на самолёте</h4>
+                  <p class="products__card__subtitle subtitle">
+                    В сертификат входит: полёт на верто- лёте 5 минут, прыжок с парашютом, прогулка на высоте 200м.
+                  </p>
+                  <div class="products__card__readmore">
+                    <button class="products__card__readmore__button main-button">Подробнее</button>
+                    <p class="products__card__readmore__text">от <span>17000₽</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <img src="./assets/products/flyman-picture.jpg " alt="helicopter" />
+                <div class="products__card__text">
+                  <h4 class="products__card__title">Полёт в аэротрубе</h4>
+                  <p class="products__card__subtitle subtitle">
+                    В сертификат входит: прыжок с парашютом, полёт в аэротрубе 10 минут и фотосессия.
+                  </p>
+                  <div class="products__card__readmore">
+                    <button class="products__card__readmore__button main-button">Подробнее</button>
+                    <p class="products__card__readmore__text">от <span>8900₽</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="manual">
+          <div class="manual__container">
+            <h2 class="manual__title title">
+              <span>Подробная инструкция по активации</span>
+              <p>сертификата на сайте:</p>
+            </h2>
+            <h3 class="manual__subtitle subtitle">
+              <p class="manual__subtitle">
+                1) Необходимо зайти на страницу “<a href="/">Активация</a>” (пункт находится сверху сайта или
+                <a href="/">по ссылке</a>
+                которая указана на вашем сертификате).
+              </p>
+              <p class="manual__subtitle">
+                2) В поле “Активация сертификата” вводим ваши данные и индивидуальный номер, указанный на лицевой
+                стороне сертификата.
+              </p>
+              <p class="manual__subtitle">
+                3) Готово! Вы активировали сертификат, и теперь вы можете воспользоваться им в течение 3 следующих
+                месяцев.
+              </p>
+            </h3>
+          </div>
+        </section>
+        <section class="certificates">
+          <div class="products__container--certificates">
+            <div class="products__page-title">
+              <h2 class="products__title title">Выгодные сертификаты:</h2>
+              <a href="/" class="products__title-link">
+                <span>Все услуги</span>
+                <img src="./assets/products/arrow-icon.svg" alt="arrow link" class="products__title-link__icon" />
+              </a>
+            </div>
+            <div class="products__cards">
+              <div class="products__card">
+                <img src="./assets/products/certificate-purple--picture.jpg" alt="helicopter" />
+                <div class="products__card__text">
+                  <h4 class="products__card__title">Сертификат “Platinum”</h4>
+                  <p class="products__card__subtitle subtitle">
+                    В сертификат входит: полёт на верто- лёте 12 минут, прыжок с парашютом, полёт в аэротрубе 25 минут.
+                  </p>
+                  <div class="products__card__readmore">
+                    <button class="products__card__readmore__button main-button">Заказать</button>
+                    <p class="products__card__readmore__text">от <span>25000₽</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <img src="./assets/products/certificate-blue--picture.jpg" alt="helicopter" />
+                <div class="products__card__text">
+                  <h4 class="products__card__title">Сертификат “Gold”</h4>
+                  <p class="products__card__subtitle subtitle">
+                    В сертификат входит: полёт на верто- лёте 5 минут, прыжок с парашютом, прогулка на высоте 200м.
+                  </p>
+                  <div class="products__card__readmore">
+                    <button class="products__card__readmore__button main-button">Заказать</button>
+                    <p class="products__card__readmore__text">от <span>17000₽</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__card">
+                <img src="./assets/products/certificate-black--picture.jpg" alt="helicopter" />
+                <div class="products__card__text">
+                  <h4 class="products__card__title">Сертификат “Silver”</h4>
+                  <p class="products__card__subtitle subtitle">
+                    В сертификат входит: прыжок с парашютом, полёт в аэротрубе 10 минут и фотосессия.
+                  </p>
+                  <div class="products__card__readmore">
+                    <button class="products__card__readmore__button main-button">Заказать</button>
+                    <p class="products__card__readmore__text">от <span>8900₽</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

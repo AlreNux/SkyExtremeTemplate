@@ -1,0 +1,30 @@
+.delivery-block__container {
+  margin: -100px 121px -100px 118px;
+  z-index: 11;
+  position: relative;
+}
+
+.delivery-block__inner {
+  background: #fff;
+  border-radius: 19px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-block__card {
+  padding: 23px 30px 23px 20px;
+  margin: 36px 0;
+  border-right: 1px solid var(--background-color);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 138%;
+  text-align: center;
+  color: var(--text-secondary-color);
+}
+
+.delivery-block__card__text {
+  padding-left: 9px;
+}
