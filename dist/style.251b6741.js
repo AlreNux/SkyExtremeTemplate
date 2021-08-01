@@ -224,12 +224,32 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\manual\\window-background--picture.jpg":[["window-background--picture.4eef6312.jpg","assets/manual/window-background--picture.jpg"],"assets/manual/window-background--picture.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/style.css":[function(require,module,exports) {
+},{"./..\\..\\assets\\manual\\window-background--picture.jpg":[["window-background--picture.4eef6312.jpg","assets/manual/window-background--picture.jpg"],"assets/manual/window-background--picture.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/components/reviews.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./root.css":"styles/root.css","./general.css":"styles/general.css","./components/header.css":"styles/components/header.css","./components/search-section.css":"styles/components/search-section.css","./components/about-us.css":"styles/components/about-us.css","./components/products.css":"styles/components/products.css","./components/delivey-block.css":"styles/components/delivey-block.css","./components/manual.css":"styles/components/manual.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/components/questions.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/components/feedback.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/components/footer.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/style.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./root.css":"styles/root.css","./general.css":"styles/general.css","./components/header.css":"styles/components/header.css","./components/search-section.css":"styles/components/search-section.css","./components/about-us.css":"styles/components/about-us.css","./components/products.css":"styles/components/products.css","./components/delivey-block.css":"styles/components/delivey-block.css","./components/manual.css":"styles/components/manual.css","./components/reviews.css":"styles/components/reviews.css","./components/questions.css":"styles/components/questions.css","./components/feedback.css":"styles/components/feedback.css","./components/footer.css":"styles/components/footer.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -257,7 +277,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60332" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54434" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

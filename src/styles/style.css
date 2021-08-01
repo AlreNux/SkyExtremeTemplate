@@ -10,6 +10,10 @@ Document
 @import './components/products.css';
 @import './components/delivey-block.css';
 @import './components/manual.css';
+@import './components/reviews.css';
+@import './components/questions.css';
+@import './components/feedback.css';
+@import './components/footer.css';
 
 /*
 Use a better box model (opinionated).
@@ -37,6 +41,7 @@ html {
   text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   tab-size: 4; /* 3 */
+  scroll-behavior: smooth;
 }
 
 /*

@@ -117,79 +117,58 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"javascript/slider.js":[function(require,module,exports) {
+var slider = document.querySelector('.slider__items');
+var slides = document.querySelectorAll('.slider__item');
+var reviewsButton = document.querySelectorAll('.reviews .slider__button');
+var current = 0;
+var prev = 4;
+var next = 1;
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
+var _loop = function _loop(i) {
+  reviewsButton[i].addEventListener('click', function () {
+    return i == 0 ? gotoPrev() : gotoNext();
+  });
+};
+
+for (var i = 0; i < reviewsButton.length; i++) {
+  _loop(i);
+}
+
+var gotoPrev = function gotoPrev() {
+  return current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+};
+
+var gotoNext = function gotoNext() {
+  return current < 4 ? gotoNum(current + 1) : gotoNum(0);
+};
+
+var gotoNum = function gotoNum(number) {
+  current = number;
+  prev = current - 1;
+  next = current + 1;
+
+  for (var _i = 0; _i < slides.length; _i++) {
+    slides[_i].classList.remove('active');
+
+    slides[_i].classList.remove('prev');
+
+    slides[_i].classList.remove('next');
   }
 
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
+  if (next == 5) {
+    next = 0;
   }
 
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
+  if (prev == -1) {
+    prev = 4;
   }
 
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/root.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  slides[current].classList.add('active');
+  slides[prev].classList.add('prev');
+  slides[next].classList.add('next');
+};
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -393,5 +372,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/root.df3e821d.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","javascript/slider.js"], null)
+//# sourceMappingURL=/slider.1aaeb44b.js.map
