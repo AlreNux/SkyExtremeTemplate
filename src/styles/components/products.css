@@ -1,5 +1,5 @@
 .products__container--services {
-  padding: 184px 121px 0 118px;
+  padding: 0 121px 0 118px;
 }
 
 .products__container--certificates {
@@ -19,14 +19,17 @@
   color: var(--text-secondary-color);
   font-weight: 700;
   line-height: 18px;
+  border-bottom: 1px solid transparent;
+  transition: var(--hover-transition);
 }
 
-.products__title-link:visited {
-  color: var(--text-secondary-color);
+.products__title-link:hover {
+  border-bottom: 1px solid var(--text-secondary-color);
 }
 
-.products__title-link:active {
-  color: var(--text-secondary-color);
+.products__title-link:focus {
+  outline: none;
+  border-bottom: 1px solid var(--text-secondary-color);
 }
 
 .products__title-link__icon {
@@ -37,7 +40,15 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 56px 0 92px;
+  padding-top: 38px;
+}
+
+.products__cards:first-child {
+  padding-top: 56px;
+}
+
+.products__cards:last-child {
+  padding-bottom: 87px;
 }
 
 .products__card {
@@ -74,6 +85,15 @@
 
 .products__card__readmore__button {
   padding: 11px 32px 14px;
+  border: 1px solid transparent;
+  transition: var(--hover-transition);
+}
+
+.products__card__readmore__button:hover,
+.products__card__readmore__button:focus {
+  border: 1px solid var(--text-secondary-color);
+  background: var(--text-button-color);
+  color: var(--text-secondary-color);
 }
 
 .products__card__readmore__text {

@@ -1,5 +1,5 @@
 .questions__container {
-  padding: 92px 121px 92px 118px;
+  padding: 0 121px 92px 118px;
 }
 
 .questions__title {
@@ -42,10 +42,17 @@
   font-weight: 600;
   font-size: 19px;
   line-height: 179%;
+  border: 1px solid transparent;
+  transition: var(--hover-transition);
 }
 
 .accordion__label:hover {
   cursor: pointer;
+}
+
+.accordion__label:focus {
+  border: 1px solid var(--text-secondary-color);
+  border-radius: var(--border-radius-container);
 }
 
 .accordion__label::before {

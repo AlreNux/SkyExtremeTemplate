@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 92px;
 }
 
 .slider__buttons > button {
@@ -42,6 +43,7 @@
   opacity: 0;
   box-shadow: var(--box-shadow);
   border-radius: 19px;
+  transition: var(--hover-transition);
 }
 
 .slider__item.active {
@@ -118,4 +120,10 @@
   color: var(--text-secondary-color);
   font-size: 14px;
   line-height: 186%;
+  border-bottom: 1px solid transparent;
+  transition: var(--hover-transition);
+}
+
+.slider__item__link:hover {
+  border-bottom: 1px solid var(--text-secondary-color);
 }

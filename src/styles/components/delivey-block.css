@@ -1,5 +1,6 @@
 .delivery-block__container {
-  margin: -100px 121px -100px 118px;
+  padding-bottom: 184px;
+  margin: -85px 121px -100px 118px;
   z-index: 11;
   position: relative;
 }
@@ -23,6 +24,10 @@
   line-height: 138%;
   text-align: center;
   color: var(--text-secondary-color);
+}
+
+.delivery-block__card:last-child {
+  border-right: none;
 }
 
 .delivery-block__card__text {

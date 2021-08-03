@@ -11,6 +11,13 @@
 
 .manual__subtitle > a {
   color: var(--text-secondary-color);
+  transition: var(--hover-transition);
+  border-bottom: 1px solid transparent;
+}
+
+.manual__subtitle > a:hover,
+.manual__subtitle > a:focus {
+  border-bottom: 1px solid var(--text-secondary-color);
 }
 
 .manual__subtitle:first-child {

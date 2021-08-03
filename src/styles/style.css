@@ -15,6 +15,10 @@ Document
 @import './components/feedback.css';
 @import './components/footer.css';
 
+@import './components/breadcrumbs.css';
+@import './components/basket.css';
+@import './components/modals.css';
+
 /*
 Use a better box model (opinionated).
 */

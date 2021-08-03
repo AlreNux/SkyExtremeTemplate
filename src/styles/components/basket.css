@@ -1,0 +1,219 @@
+.container--basket {
+  background-color: var(--background-color);
+  max-width: none;
+}
+
+.basket__container {
+  padding: 0 117px 92px 122px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.basket__title {
+  padding-bottom: 56px;
+}
+
+.basket__card {
+  margin-bottom: 38px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-container);
+  background: var(--text-button-color);
+  display: flex;
+}
+
+.basket__card:last-child {
+  margin-bottom: 92px;
+}
+
+.basket__card__picture {
+  filter: var(--filter-shadow);
+  transform: rotate(13.86deg);
+  width: 333px;
+  height: 241px;
+}
+
+.basket__card__inner {
+  width: 100%;
+  padding: 27px 37px 41px 0;
+}
+
+.basket__card__inner__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 179%;
+  border-bottom: 1px solid var(--border-card-color);
+}
+
+.basket__card__price {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 179%;
+  color: var(--background-button-color);
+}
+
+.basket__card__price--mobile {
+  display: none;
+}
+
+.basket__card__description {
+  padding-top: 21px;
+  color: var(--subtext-color);
+}
+
+.basket__card__action {
+  padding-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basket__card__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.basket__card__button {
+  padding: 18px 11px;
+  box-shadow: var(--box-shadow);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: var(--hover-transition);
+}
+
+.basket__card__button:focus {
+  outline: none;
+  border: 1px solid var(--text-main-color);
+}
+
+.basket__card__button__minus {
+  width: 16px;
+  height: 2px;
+  background: var(--background-button-color);
+  border-radius: 2px;
+}
+
+.basket__card__button__plus {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background: #2c4cbc;
+  border-radius: 2px;
+  transform: rotate(90deg);
+}
+
+.basket__card__count {
+  padding: 0 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--text-secondary-color);
+}
+
+.basket__card__button__delete {
+  padding-left: 34px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--text-placeholder-color);
+  transition: var(--hover-transition);
+}
+
+.basket__card__button__delete:hover,
+.basket__card__button__delete:focus {
+  color: var(--text-main-color);
+}
+
+.basket__card__conditions {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 129%;
+  text-decoration-line: underline;
+  color: var(--text-secondary-color);
+  transition: var(--hover-transition);
+}
+
+.basket__card__conditions:hover,
+.basket__card__conditions:focus {
+  outline: none;
+  filter: var(--filter-shadow);
+}
+
+.basket__summary-card {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-container);
+  background: var(--text-button-color);
+  padding: 41px 230px 52px;
+}
+
+.basket__summary-card__text {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+.basket__summary-card__text:last-child {
+  padding-bottom: 17px;
+  border-bottom: 1px solid var(--border-card-color);
+}
+
+.basket__summary-card__summary-text {
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 121%;
+}
+
+.basket__summary-card__summary-text--price {
+  color: var(--text-secondary-color);
+}
+
+.basket__summary-card__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basket__summary-card__button {
+  max-width: 412px;
+  width: 100%;
+  padding: 11px 0 14px;
+  border-radius: 12px;
+  margin-top: 16px;
+  font-weight: 600;
+  transition: var(--hover-transition);
+}
+
+.basket__summary-card__button:first-child {
+  margin-top: 45px;
+}
+
+.basket__summary-card__button--checkout {
+  background: var(--background-button-color);
+  color: var(--text-button-color);
+  border: 1px solid transparent;
+}
+
+.basket__summary-card__button--checkout:hover,
+.basket__summary-card__button--checkout:focus {
+  background: var(--text-button-color);
+  color: var(--background-button-color);
+  border: 1px solid var(--background-button-color);
+}
+
+.basket__summary-card__button--clear {
+  background: var(--background-color);
+  color: var(--text-placeholder-color);
+  border: 1px solid transparent;
+}
+
+.basket__summary-card__button--clear:hover,
+.basket__summary-card__button--clear:focus {
+  color: var(--text-main-color);
+  background: var(--text-button-color);
+  border: 1px solid var(--text-main-color);
+}

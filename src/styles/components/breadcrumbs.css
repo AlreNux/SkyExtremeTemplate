@@ -1,0 +1,32 @@
+.breadcrumbs__container {
+  padding: 42px 0 78px 121px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.breadcrumbs__text {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--text-placeholder-color);
+}
+
+.breadcrumbs__link:focus {
+  outline: none;
+  color: var(--text-main-color);
+}
+
+.breadcrumbs__link:last-child {
+  font-weight: 700;
+  color: var(--text-secondary-color);
+}
+
+.breadcrumbs__text__icon {
+  padding: 0 3px;
+  /*color: var(--text-placeholder-color); Это img :С*/
+}

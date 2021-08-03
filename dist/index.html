@@ -17,7 +17,7 @@
   <body>
     <header class="header" id="header">
       <div class="header__container container">
-        <a class="navigation__link" href="/">
+        <a class="header__link" href="/">
           <img class="header__logotype logotype" src="/logotype-icon.cffb9e06.svg" alt="logotype">
         </a>
         <nav class="navigation">
@@ -44,7 +44,7 @@
         </nav>
         <div class="header__map">
           <img src="/map-icon.ac355c39.svg" alt="Select address" class="header__map__icon">
-          <span>Выборгское шоссе, д.212, п.24а</span>
+          <button type="button">Выборгское шоссе, д.212, п.24а</button>
         </div>
         <div class="header__social">
           <a href="/" class="header__social__link"><img src="/vk-icon.f5c52916.svg" alt="vk"></a>
@@ -67,9 +67,10 @@
             </select>
             <div class="search__info">
               <p class="search__info__subtitle">пн-пт: с 9:00 до 19:00</p>
-              <p class="search__info__title">+7 (800) 700-92-32</p>
+              <a href="tel:+7800700-92-32" class="footer__info__title">+7 (800) 700-92-32</a>
+
             </div>
-            <label for="search" class="search__label">
+            <label htmlfor="search" class="search__label">
               <input type="text" name="search" id="search" placeholder="Поиск..." class="search__input">
               <button type="button" class="search__label__button">
                 <img src="/magnifier-icon.ed44e281.svg" alt="magnifier" class="search__label__button__icon">
@@ -129,10 +130,10 @@
               </div>
             </div>
             <div class="carousel__actions">
-              <button id="carousel__button--prev">
+              <button id="carousel__button--prev" class="carousel__button">
                 <div class="arrow slider__arrow--left"></div>
               </button>
-              <button id="carousel__button--next">
+              <button id="carousel__button--next" class="carousel__button">
                 <div class="arrow slider__arrow--right"></div>
               </button>
               
@@ -435,6 +436,7 @@
         </section>
       </div>
     </main>
+
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__inner">
@@ -443,7 +445,7 @@
               <img class="footer__logotype logotype" src="/logotype-icon.cffb9e06.svg" alt="logotype">
               <div class="footer__info">
                 <p class="footer__info__subtitle">пн-пт: с 9:00 до 19:00</p>
-                <p class="footer__info__title">+7 (800) 700-92-32</p>
+                <a href="tel:+7800700-92-32" class="footer__info__title">+7 (800) 700-92-32</a>
               </div>
               <div class="footer__social">
                 <a href="/" class="footer__social__link">
