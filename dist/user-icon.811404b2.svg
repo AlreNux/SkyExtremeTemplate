@@ -1,4 +1,1 @@
-<svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.3333 25V22.3333C22.3333 20.9188 21.7714 19.5623 20.7712 18.5621C19.771 17.5619 18.4145 17 17 17H6.33333C4.91885 17 3.56229 17.5619 2.5621 18.5621C1.5619 19.5623 1 20.9188 1 22.3333V25" stroke="#2C4CBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.6663 11.6667C14.6119 11.6667 16.9997 9.27885 16.9997 6.33333C16.9997 3.38781 14.6119 1 11.6663 1C8.72082 1 6.33301 3.38781 6.33301 6.33333C6.33301 9.27885 8.72082 11.6667 11.6663 11.6667Z" stroke="#2C4CBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" fill="none" stroke="#2c4cbc" stroke-width="2" stroke-linejoin="round" xmlns:v="https://vecta.io/nano"><path d="M22.333 25v-2.667c0-1.415-.562-2.771-1.562-3.771S18.415 17 17 17H6.333c-1.414 0-2.771.562-3.771 1.562S1 20.919 1 22.333V25" stroke-linecap="round"/><path d="M11.666 11.667c2.946 0 5.333-2.388 5.333-5.333S14.612 1 11.666 1 6.333 3.388 6.333 6.333s2.388 5.333 5.333 5.333z"/></svg>

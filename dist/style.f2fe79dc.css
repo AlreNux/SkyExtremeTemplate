@@ -1,8 +1,8 @@
 :root {
   --text-main-color: #000;
   --text-secondary-color: #2c4cbc;
-  --subtext-color: #949494;
-  --text-placeholder-color: #a7a7a7;
+  --subtext-color: #615f5f;
+  --text-placeholder-color: #6f6f6f;
   --background-color: #f3f4f8;
   --text-button-color: #fff;
   --background-button-color: #2c4cbc;
@@ -160,6 +160,21 @@
   margin-left: 23px;
 }
 
+.header__social__icon--vk {
+  width: 21px;
+  height: 12px;
+}
+
+.header__social__icon--inst {
+  width: 15px;
+  height: 15px;
+}
+
+.header__social__icon--yt {
+  width: 20px;
+  height: 15px;
+}
+
 .search__container {
   padding: 37px 0 37px 0;
   margin: 0 121px 0 118px;
@@ -194,6 +209,8 @@
 
 .search__catalog__icon {
   padding-right: 6px;
+  width: 30px;
+  height: 15px;
 }
 
 .search__select {
@@ -256,10 +273,19 @@
   margin: 11px 27px 12px 5px;
 }
 
+.search__label__button__icon {
+  width: 18px;
+  height: 18px;
+}
+
 .search__user {
   margin-left: 48px;
   transition: var(--hover-transition);
   border: 1px solid transparent;
+}
+.search__user__icon {
+  width: 24px;
+  height: 26px;
 }
 
 .search__user:focus {
@@ -271,6 +297,11 @@
   margin-left: 48px;
   display: flex;
   transition: var(--hover-transition);
+}
+
+.search__shopping-basket__icon {
+  width: 32px;
+  height: 29px;
 }
 
 .search__shopping-basket > .search__shopping-basket__text > p:first-child {
@@ -440,6 +471,8 @@
 }
 
 .products__title-link__icon {
+  width: 16px;
+  height: 7px;
   padding-left: 8px;
 }
 
@@ -471,7 +504,7 @@
 }
 
 .products__card__picture {
-  max-width: 375px;
+  width: 375px;
   height: 212px;
   border-top-left-radius: var(--border-radius-container);
   border-top-right-radius: var(--border-radius-container);
@@ -551,6 +584,11 @@
 
 .delivery-block__card__text {
   padding-left: 9px;
+}
+
+.delivery-block__card__picture {
+  width: 66px;
+  height: 67px;
 }
 
 .manual__container {
@@ -948,6 +986,26 @@ input[type='checkbox']:checked ~ .accordion__child {
   user-select: none;
 }
 
+.footer__social__icon--inst {
+  width: 15px;
+  height: 15px;
+}
+
+.footer__social__icon--vk {
+  width: 21px;
+  height: 12px;
+}
+
+.footer__social__icon--whup {
+  width: 15px;
+  height: 15px;
+}
+
+.footer__social__icon--tel {
+  width: 17px;
+  height: 13px;
+}
+
 .footer__copyright {
   font-size: 14px;
   line-height: 157%;
@@ -1013,6 +1071,8 @@ input[type='checkbox']:checked ~ .accordion__child {
 }
 
 .footer__link-up__arrow {
+  width: 16px;
+  height: 7px;
   padding-top: 12px;
   transform: rotate(-90deg);
 }
