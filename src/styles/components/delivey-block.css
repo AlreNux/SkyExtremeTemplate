@@ -33,3 +33,8 @@
 .delivery-block__card__text {
   padding-left: 9px;
 }
+
+.delivery-block__card__picture {
+  width: 66px;
+  height: 67px;
+}

@@ -32,6 +32,8 @@
 
 .search__catalog__icon {
   padding-right: 6px;
+  width: 30px;
+  height: 15px;
 }
 
 .search__select {
@@ -94,10 +96,19 @@
   margin: 11px 27px 12px 5px;
 }
 
+.search__label__button__icon {
+  width: 18px;
+  height: 18px;
+}
+
 .search__user {
   margin-left: 48px;
   transition: var(--hover-transition);
   border: 1px solid transparent;
+}
+.search__user__icon {
+  width: 24px;
+  height: 26px;
 }
 
 .search__user:focus {
@@ -109,6 +120,11 @@
   margin-left: 48px;
   display: flex;
   transition: var(--hover-transition);
+}
+
+.search__shopping-basket__icon {
+  width: 32px;
+  height: 29px;
 }
 
 .search__shopping-basket > .search__shopping-basket__text > p:first-child {

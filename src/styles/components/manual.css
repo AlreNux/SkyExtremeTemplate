@@ -2,6 +2,7 @@
   padding: 91px 150px 176px 121px;
   position: relative;
   background-image: url('../../assets/manual/window-background--picture.jpg');
+  background-size: cover;
 }
 
 .manual__subtitle {

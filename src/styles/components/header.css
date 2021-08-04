@@ -10,6 +10,14 @@
   border: 1px solid transparent;
 }
 
+.header__shopping-cart {
+  display: none;
+}
+
+.header__mobile {
+  display: flex;
+}
+
 .header__link:focus {
   outline: none;
   border: 1px solid var(--text-secondary-color);
@@ -75,4 +83,19 @@
   display: flex;
   align-items: center;
   margin-left: 23px;
+}
+
+.header__social__icon--vk {
+  width: 21px;
+  height: 12px;
+}
+
+.header__social__icon--inst {
+  width: 15px;
+  height: 15px;
+}
+
+.header__social__icon--yt {
+  width: 20px;
+  height: 15px;
 }

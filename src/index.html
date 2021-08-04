@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description" content="Sky extreme landing">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,14 +50,20 @@
           <button type="button">Выборгское шоссе, д.212, п.24а</button>
         </div>
         <div class="header__social">
-          <a href="/" class="header__social__link"><img src="./assets/social-icons/vk-icon.svg" alt="vk" /></a>
-          <a href="/" class="header__social__link"
-            ><img src="./assets/social-icons/instagram-icon.svg" alt="instagram"
-          /></a>
-          <a href="/" class="header__social__link"
-            ><img src="./assets/social-icons/youtube-icon.svg" alt="youtube"
-          /></a>
+          <a href="/" class="header__social__link">
+            <img src="./assets/social-icons/vk-icon.svg" alt="vk" class="header__social__icon--vk"/>
+          </a>
+          <a href="/" class="header__social__link">
+            <img src="./assets/social-icons/instagram-icon.svg" alt="instagram" class="header__social__icon--inst"/>
+          </a>
+          <a href="/" class="header__social__link">
+            <img src="./assets/social-icons/youtube-icon.svg" alt="youtube" class="header__social__icon--yt"/>
+          </a>
         </div>
+        <img src="./assets/search-section/shoppingCart-icon.svg" alt="shopping cart" class="header__shopping-cart"/>
+        <button class="btn nav__burger" type="button">
+          <span class="nav__burger-item">Menu</span>
+        </button>
       </div>
     </header>
 
@@ -69,7 +75,7 @@
               <img src="./assets/search-section/helicopter-icon.svg" alt="Helicopter" class="search__catalog__icon" />
               <span>Каталог</span>
             </button>
-            <select name="city" id="city" class="search__select">
+            <select title="city" name="city" id="city" class="search__select">
               <option value="Москва и область">Москва и область</option>
             </select>
             <div class="search__info">
@@ -88,10 +94,10 @@
               </button>
             </label>
             <button type="button" class="search__user">
-              <img src="./assets/search-section/user-icon.svg" alt="user body" />
+              <img src="./assets/search-section/user-icon.svg" alt="user body" class="search__user__icon"/>
             </button>
             <button type="button" class="search__shopping-basket">
-              <img src="./assets/search-section/shoppingCart-icon.svg" alt="shopping cart" />
+              <img src="./assets/search-section/shoppingCart-icon.svg" alt="shopping cart" class="search__shopping-basket__icon"/>
               <div class="search__shopping-basket__text">
                 <p class="search__shopping-basket__title">Ваша корзина</p>
                 <p class="search__shopping-basket__subtitle">2 шт</p>
@@ -141,10 +147,10 @@
               </div>
             </div>
             <div class="carousel__actions">
-              <button id="carousel__button--prev" class="carousel__button">
+              <button id="carousel__button--prev" class="carousel__button" aria-label="Left Align">
                 <div class="arrow slider__arrow--left"></div>
               </button>
-              <button id="carousel__button--next" class="carousel__button">
+              <button id="carousel__button--next" class="carousel__button" aria-label="Right Align">
                 <div class="arrow slider__arrow--right"></div>
               </button>
               </button>
@@ -155,28 +161,28 @@
           <div class="delivery-block__container">
             <div class="delivery-block__inner">
               <div class="delivery-block__card">
-                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" />
+                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" class="delivery-block__card__picture"/>
                 <span class="delivery-block__card__text">
                   <span>Электронный</span>
                   <p>сертификат на e-mail</p>
                 </span>
               </div>
               <div class="delivery-block__card">
-                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" />
+                <img src="./assets/delivery-block/time-box--icon.svg" alt="surtificate" class="delivery-block__card__picture"/>
                 <span class="delivery-block__card__text">
                   <span>Срочная доставка в</span>
                   <p>день заказа, за 1-4 часа</p></span
                 >
               </div>
               <div class="delivery-block__card">
-                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" />
+                <img src="./assets/delivery-block/car-delivery--icon.svg" alt="surtificate" class="delivery-block__card__picture"/>
                 <span class="delivery-block__card__text">
                   <span>Бесплатная доставка</span>
                   <p>на следующий день</p>
                 </span>
               </div>
               <div class="delivery-block__card">
-                <img src="./assets/delivery-block/surtificate--icon.svg" alt="surtificate" />
+                <img src="./assets/delivery-block/discount--icon.svg" alt="surtificate" class="delivery-block__card__picture"/>
                 <span class="delivery-block__card__text">
                   <span>Выгодные услуги</span>
                   <p>и низкие цены</p>
@@ -198,7 +204,7 @@
               <div class="products__card">
                 <img src="./assets/products/helicopter-picture.jpg" alt="helicopter" class="products__card__picture" />
                 <div class="products__card__text">
-                  <h4 class="products__card__title">Полёт на вертолёте</h4>
+                  <h3 class="products__card__title">Полёт на вертолёте</h3>
                   <p class="products__card__subtitle subtitle">
                     В сертификат входит: полёт на верто- лёте 12 минут, прыжок с парашютом, полёт в аэротрубе 25 минут.
                   </p>
@@ -211,7 +217,7 @@
               <div class="products__card">
                 <img src="./assets/products/airship-picture.jpg" alt="airship" class="products__card__picture" />
                 <div class="products__card__text">
-                  <h4 class="products__card__title">Полёт на самолёте</h4>
+                  <h3 class="products__card__title">Полёт на самолёте</h3>
                   <p class="products__card__subtitle subtitle">
                     В сертификат входит: полёт на верто- лёте 5 минут, прыжок с парашютом, прогулка на высоте 200м.
                   </p>
@@ -224,7 +230,7 @@
               <div class="products__card">
                 <img src="./assets/products/flyman-picture.jpg " alt="flyman" class="products__card__picture" />
                 <div class="products__card__text">
-                  <h4 class="products__card__title">Полёт в аэротрубе</h4>
+                  <h3 class="products__card__title">Полёт в аэротрубе</h3>
                   <p class="products__card__subtitle subtitle">
                     В сертификат входит: прыжок с парашютом, полёт в аэротрубе 10 минут и фотосессия.
                   </p>
@@ -235,6 +241,10 @@
                 </div>
               </div>
             </div>
+            <a href="/" class="products__title-link products__title-link--mobile">
+              <span>Все услуги</span>
+              <img src="./assets/arrow-icon.svg" alt="arrow link" class="products__title-link__icon" />
+            </a>
           </div>
         </section>
         <section class="manual">
@@ -243,7 +253,7 @@
               <span>Подробная инструкция по активации</span>
               <p>сертификата на сайте:</p>
             </h2>
-            <h4 class="manual__subtitle subtitle">
+            <h3 class="manual__subtitle subtitle">
               <p class="manual__subtitle">
                 1) Необходимо зайти на страницу “<a href="/">Активация</a>” (пункт находится сверху сайта или
                 <a href="/">по ссылке</a>
@@ -257,7 +267,7 @@
                 3) Готово! Вы активировали сертификат, и теперь вы можете воспользоваться им в течение 3 следующих
                 месяцев.
               </p>
-            </h4>
+            </h3>
           </div>
         </section>
         <section class="certificates">
@@ -277,7 +287,7 @@
                   class="products__card__picture"
                 />
                 <div class="products__card__text">
-                  <h4 class="products__card__title">Сертификат “Platinum”</h4>
+                  <h3 class="products__card__title">Сертификат “Platinum”</h3>
                   <p class="products__card__subtitle subtitle">
                     В сертификат входит: полёт на верто- лёте 12 минут, прыжок с парашютом, полёт в аэротрубе 25 минут.
                   </p>
@@ -294,7 +304,7 @@
                   class="products__card__picture"
                 />
                 <div class="products__card__text">
-                  <h4 class="products__card__title">Сертификат “Gold”</h4>
+                  <h3 class="products__card__title">Сертификат “Gold”</h3>
                   <p class="products__card__subtitle subtitle">
                     В сертификат входит: полёт на верто- лёте 5 минут, прыжок с парашютом, прогулка на высоте 200м.
                   </p>
@@ -311,7 +321,7 @@
                   class="products__card__picture"
                 />
                 <div class="products__card__text">
-                  <h4 class="products__card__title">Сертификат “Silver”</h4>
+                  <h3 class="products__card__title">Сертификат “Silver”</h3>
                   <p class="products__card__subtitle subtitle">
                     В сертификат входит: прыжок с парашютом, полёт в аэротрубе 10 минут и фотосессия.
                   </p>
@@ -322,6 +332,10 @@
                 </div>
               </div>
             </div>
+            <a href="/" class="products__title-link products__title-link--mobile">
+              <span>Все услуги</span>
+              <img src="./assets/arrow-icon.svg" alt="arrow link" class="products__title-link__icon" />
+            </a>
           </div>
         </section>
         <section class="reviews">
@@ -375,10 +389,10 @@
           </div>
           <!-- Please FIX ME -->
           <div class="slider__buttons">
-            <button type="button" class="slider__button slider__button--prev">
+            <button type="button" class="slider__button slider__button--prev" aria-label="Left Align">
               <div class="arrow slider__arrow--left"></div>
             </button>
-            <button type="button" class="slider__button slider__button--next">
+            <button type="button" class="slider__button slider__button--next" aria-label="Right Align">
               <div class="arrow slider__arrow--right"></div>
             </button>
           </div>
@@ -490,16 +504,16 @@
               </div>
               <div class="footer__social">
                 <a href="/" class="footer__social__link">
-                  <img src="assets/social-icons/instagram-icon.svg" alt="instagram" class="footer__social__icon" />
+                  <img src="assets/social-icons/instagram-icon.svg" alt="instagram" class="footer__social__icon footer__social__icon--inst" />
                 </a>
                 <a href="/" class="footer__social__link">
-                  <img src="assets/social-icons/vk-icon.svg" alt="vkontakte" class="footer__social__icon" />
+                  <img src="assets/social-icons/vk-icon.svg" alt="vkontakte" class="footer__social__icon footer__social__icon--vk" />
                 </a>
                 <a href="/" class="footer__social__link">
-                  <img src="assets/social-icons/whatsapp--icon.svg" alt="whatsapp" class="footer__social__icon" />
+                  <img src="assets/social-icons/whatsapp--icon.svg" alt="whatsapp" class="footer__social__icon footer__social__icon--whup" />
                 </a>
                 <a href="/" class="footer__social__link">
-                  <img src="assets/social-icons/telegram--icon.svg" alt="telegram" class="footer__social__icon" />
+                  <img src="assets/social-icons/telegram--icon.svg" alt="telegram" class="footer__social__icon footer__social__icon--tel" />
                 </a>
               </div>
             </div>
@@ -585,12 +599,12 @@
             <span>Наверх</span>
             <img src="./assets/arrow-icon.svg" alt="arrow link" class="footer__link-up__arrow" />
           </a>
-          <img src="../assets/footer/clouds.svg" alt="clouds" class="footer__link-up__clouds" />
+          <img src="./assets/footer/clouds.svg" alt="clouds" class="footer__link-up__clouds" />
         </div>
       </div>
     </footer>
-    <script src="javascript/slider.js"></script>
-    <script src="javascript/carousel.js"></script>
+    <script async src="javascript/slider.js"></script>
+    <script async src="javascript/carousel.js"></script>
     <script
       type="text/javascript"
       charset="utf-8"

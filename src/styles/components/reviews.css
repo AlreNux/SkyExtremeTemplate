@@ -1,5 +1,5 @@
 .reviews__container {
-  padding: 0 120px 100px 120px;
+  padding: 92px 120px 100px 120px;
 }
 
 .reviews__title {
@@ -85,8 +85,8 @@
 }
 
 .slider__item__picture {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   user-select: none;
 }
 

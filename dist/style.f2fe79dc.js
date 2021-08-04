@@ -209,7 +209,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\billboard-background.jpg":[["billboard-background.2f0df868.jpg","../assets/billboard-background.jpg"],"../assets/billboard-background.jpg"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/components/products.css":[function(require,module,exports) {
+},{"./..\\..\\assets\\about-us\\billboard-background.jpg":[["billboard-background.94dfbd0b.jpg","../assets/about-us/billboard-background.jpg"],"../assets/about-us/billboard-background.jpg"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/components/products.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -259,12 +259,22 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\modals\\arrow.svg":[["arrow.8286a61c.svg","../assets/modals/arrow.svg"],"../assets/modals/arrow.svg"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/style.css":[function(require,module,exports) {
+},{"./..\\..\\assets\\modals\\arrow.svg":[["arrow.8286a61c.svg","../assets/modals/arrow.svg"],"../assets/modals/arrow.svg"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/components/burger.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./root.css":"../styles/root.css","./general.css":"../styles/general.css","./components/header.css":"../styles/components/header.css","./components/search-section.css":"../styles/components/search-section.css","./components/about-us.css":"../styles/components/about-us.css","./components/products.css":"../styles/components/products.css","./components/delivey-block.css":"../styles/components/delivey-block.css","./components/manual.css":"../styles/components/manual.css","./components/reviews.css":"../styles/components/reviews.css","./components/questions.css":"../styles/components/questions.css","./components/feedback.css":"../styles/components/feedback.css","./components/footer.css":"../styles/components/footer.css","./components/breadcrumbs.css":"../styles/components/breadcrumbs.css","./components/basket.css":"../styles/components/basket.css","./components/modals.css":"../styles/components/modals.css","_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/media.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\assets\\about-us\\billboard--mobile.jpg":[["billboard--mobile.0a764e47.jpg","../assets/about-us/billboard--mobile.jpg"],"../assets/about-us/billboard--mobile.jpg"],"./..\\assets\\manual\\window-background--mobile.jpg":[["window-background--mobile.fecb4ec6.jpg","../assets/manual/window-background--mobile.jpg"],"../assets/manual/window-background--mobile.jpg"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../styles/style.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./root.css":"../styles/root.css","./general.css":"../styles/general.css","./components/header.css":"../styles/components/header.css","./components/search-section.css":"../styles/components/search-section.css","./components/about-us.css":"../styles/components/about-us.css","./components/products.css":"../styles/components/products.css","./components/delivey-block.css":"../styles/components/delivey-block.css","./components/manual.css":"../styles/components/manual.css","./components/reviews.css":"../styles/components/reviews.css","./components/questions.css":"../styles/components/questions.css","./components/feedback.css":"../styles/components/feedback.css","./components/footer.css":"../styles/components/footer.css","./components/breadcrumbs.css":"../styles/components/breadcrumbs.css","./components/basket.css":"../styles/components/basket.css","./components/modals.css":"../styles/components/modals.css","./components/burger.css":"../styles/components/burger.css","./media.css":"../styles/media.css","_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -292,7 +302,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50641" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57552" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

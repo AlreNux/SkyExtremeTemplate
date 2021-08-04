@@ -1,5 +1,5 @@
 .products__container--services {
-  padding: 0 121px 0 118px;
+  padding: 0 121px 92px 118px;
 }
 
 .products__container--certificates {
@@ -23,6 +23,10 @@
   transition: var(--hover-transition);
 }
 
+.products__title-link--mobile {
+  display: none;
+}
+
 .products__title-link:hover {
   border-bottom: 1px solid var(--text-secondary-color);
 }
@@ -33,6 +37,8 @@
 }
 
 .products__title-link__icon {
+  width: 16px;
+  height: 7px;
   padding-left: 8px;
 }
 
@@ -52,6 +58,7 @@
 }
 
 .products__card {
+  width: 100%;
   margin-right: 38px;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius-container);
@@ -63,6 +70,8 @@
 }
 
 .products__card__picture {
+  width: 375px;
+  height: 212px;
   border-top-left-radius: var(--border-radius-container);
   border-top-right-radius: var(--border-radius-container);
 }

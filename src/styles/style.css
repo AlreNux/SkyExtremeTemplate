@@ -18,6 +18,8 @@ Document
 @import './components/breadcrumbs.css';
 @import './components/basket.css';
 @import './components/modals.css';
+@import './components/burger.css';
+@import './media.css';
 
 /*
 Use a better box model (opinionated).
