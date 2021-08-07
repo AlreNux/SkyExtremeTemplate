@@ -22,7 +22,7 @@
 
   .header__container {
     justify-content: space-between;
-    padding: 0 75px 0 30px;
+    padding: 0 75px 0 29px;
     border-bottom: 1px solid var(--border-section-color);
   }
 
@@ -127,7 +127,7 @@
   }
 
   .breadcrumbs__container {
-    padding-left: 20px;
+    padding-left: 29px;
   }
 
   .feedback__title {
