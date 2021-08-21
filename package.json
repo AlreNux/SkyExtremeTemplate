@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve src/pages/certificates.html --open",
+    "start": "parcel serve src/index.html --open",
     "build": "parcel build src/index.html",
     "prettier": "prettier --write src/**",
     "lintHTML": "linthtml src/index.html",

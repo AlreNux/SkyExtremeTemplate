@@ -43,14 +43,10 @@
 }
 
 .products__cards {
+  padding-top: 18px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 38px;
-}
-
-.products__cards:first-child {
-  padding-top: 56px;
 }
 
 .products__cards:last-child {
@@ -59,13 +55,13 @@
 
 .products__card {
   width: 100%;
-  margin-right: 38px;
+  margin: 38px 25px 0 0;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius-container);
   flex: 0 0;
 }
 
-.products__card:last-child {
+.products__card:nth-of-type(3n) {
   margin-right: 0;
 }
 
